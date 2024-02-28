@@ -14,7 +14,7 @@ namespace FetchDataTimerFunction
             this._mediator = mediator;
         }
         [FunctionName("FetchDataTimerFunction")]
-        public void Run([TimerTrigger("* * * * * *")]TimerInfo myTimer, ILogger log)
+        public void Run([TimerTrigger("0 * * * * *")]TimerInfo myTimer, ILogger log)
         {
             _mediator.Send(new FetchDataCommand());
         }
