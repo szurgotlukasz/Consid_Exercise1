@@ -5,8 +5,6 @@ namespace Exercise1.Queries.ListAllLogs
 {
     public class LogDTO
     {
-        private Log x;
-
         public LogDTO(Log x)
         {
             this.Status = Enum.GetName(typeof(Status), x.Status);
